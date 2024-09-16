@@ -25,13 +25,18 @@ class AuthenticatedSessionController extends Controller
      */
     public function store(LoginRequest $request)
     {
-        $request->authenticate();
+        // Use the 'admin' guard to attempt login
+        if (! Auth::guard('admin')->attempt($request->only('email', 'password'), $request->boolean('remember'))) {
+            return back()->withErrors([
+                'email' => 'The provided credentials do not match our records.',
+            ]);
+        }
 
         $request->session()->regenerate();
-        // return view('admin.index');
 
-        return redirect()->intended(RouteServiceProvider::HOME);
+        return redirect()->intended(RouteServiceProvider::HOME); // Change RouteServiceProvider::HOME to your admin dashboard route if needed.
     }
+
 
     /**
      * Destroy an authenticated session.

@@ -4,12 +4,13 @@
 use App\Http\Controllers\Admin\AdminController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\BlogController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\PropertyController;
 use App\Http\Controllers\Admin\TagController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
-
-
+use App\Models\Property;
 
 Route::name('dashboard')->get('/dashboard', [DashboardController::class, 'index'])->middleware('auth:admin');
 
@@ -23,16 +24,13 @@ Route::group([
 
     // Admins
     Route::resource('admins', AdminController::class, ['except' => 'show']);
-
     // Route::patch('categories/{category}', [CategoryController::class, 'update'])->name('categories.update');
-
-
     Route::resource('tags', TagController::class, ['except' => 'show']);
-
-
-
     Route::resource('blogs', BlogController::class);
     Route::resource('blogs', BlogController::class);
+    Route::resource('contacts', ContactController::class);
+    Route::resource('Properties', PropertyController::class);
+
     // Route::patch('blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
 
 
