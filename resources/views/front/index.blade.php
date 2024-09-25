@@ -37,7 +37,7 @@
                                     </div>
                                 </div>
                                 <div class="slide-item-img">
-                                    <img src="{{ asset('front/assets/img/slider/21.png') }}" alt="#">
+                                    <img src="{{ asset('front/assets/img/slider/121.jpeg') }}" alt="#">
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
             </div>
 
             <!-- ltn__slide-item -->
-            <div class="ltn__slide-item ltn__slide-item-2  ltn__slide-item-3-normal ltn__slide-item-3">
+            {{-- <div class="ltn__slide-item ltn__slide-item-2  ltn__slide-item-3-normal ltn__slide-item-3">
                 <div class="ltn__slide-item-inner  text-right text-end">
                     <div class="container">
                         <div class="row">
@@ -72,7 +72,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <!--  -->
         </div>
@@ -189,15 +189,15 @@
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <div class="about-us-img-wrap about-img-left">
-                        <img src="{{ asset('front/assets/img/others/7.png ') }}" alt="About Us Image">
+                        <img src="{{ asset('front/assets/img/others/17.jpeg ') }}" alt="About Us Image">
                         <div class="about-us-img-info about-us-img-info-2 about-us-img-info-3">
 
-                            <div class="ltn__video-img ltn__animation-pulse1">
+                            {{-- <div class="ltn__video-img ltn__animation-pulse1">
                                 <img src="{{ asset('front/assets/img/others/8.png ') }}" alt="video popup bg image">
                                 <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0"  data-rel="lightcase:myCollection">
                                     <i class="fa fa-play"></i>
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -320,17 +320,17 @@
                         <ul class="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
                             <li>
                                 <a href="img/img-slide/11.jpg" data-rel="lightcase:myCollection">
-                                    <img src="{{ asset('front/assets/img/img-slide/11.jpg ') }}" alt="Image">
+                                    <img src="{{ asset('front/assets/img/img-slide/111.jpeg ') }}" alt="Image">
                                 </a>
                             </li>
                             <li>
                                 <a href="img/img-slide/12.jpg" data-rel="lightcase:myCollection">
-                                    <img src="{{ asset('front/assets/img/img-slide/12.jpg') }}" alt="Image">
+                                    <img src="{{ asset('front/assets/img/img-slide/112.jpeg') }}" alt="Image">
                                 </a>
                             </li>
                             <li>
                                 <a href="img/img-slide/13.jpg" data-rel="lightcase:myCollection">
-                                    <img src="{{ asset('front/assets/img/img-slide/13.jpg') }}" alt="Image">
+                                    <img src="{{ asset('front/assets/img/img-slide/113.jpeg') }}" alt="Image">
                                 </a>
                             </li>
                         </ul>
@@ -338,7 +338,7 @@
                 </div>
                 <div class="col-lg-6 align-self-center">
                     <div class="about-us-img-wrap about-img-right">
-                        <img src="{{ asset('front/assets/img/others/9.png ') }}" alt="About Us Image">
+                        <img src="{{ asset('front/assets/img/others/19.jpeg ') }}" alt="About Us Image">
                     </div>
                 </div>
             </div>
