@@ -15,14 +15,14 @@ return new class extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->string('phone')->nullable();
-            $table->decimal('price')->default(0)->nullable();
+            $table->decimal('price', 12, 2)->default(0); // 12 digits total, 2 after the decimal point
             $table->string('short_description')->nullable();
             $table->decimal('property_space')->nullable();
             $table->boolean('garden')->default(0)->nullable();
             $table->decimal('garden_space')->nullable();
-            $table->decimal('number_of_floors')->default(1)->nullable();
+            $table->integer('number_of_floors')->default(1)->nullable();
             $table->text('long_description')->nullable();
-            $table->string('image')->nullable();
+            $table->json('images')->nullable();
             $table->string('video')->nullable();
             $table->string('city')->nullable();
             $table->string('area')->nullable();

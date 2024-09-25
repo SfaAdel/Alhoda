@@ -31,7 +31,6 @@
                 <thead>
                     <tr>
                         <th>العنوان الرئيسي </th>
-                        <th>التصنيف</th>
                         {{-- <th> الوصف القصير</th> --}}
                         {{-- <th> العنوان الثانوي</th> --}}
                         {{-- <th> الوصف الطويل</th> --}}
@@ -45,7 +44,6 @@
                     @foreach ($blogs as $blog)
                         <tr>
                             <td>{{ $blog->main_title }}</td>
-                            <td>{{ $blog->category ? $blog->category->name : ' - - ' }}</td>
                             {{-- <td>{{ $blog->short_description }}</td> --}}
                             {{-- <td>{{ $blog->second_title }}</td> --}}
                             {{-- <td class="columns is-multiline m-t-30">  {{ $blog->long_description }} </td> --}}

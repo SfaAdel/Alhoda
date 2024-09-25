@@ -23,12 +23,12 @@
                                                 <i class="fa fa-play"></i>
                                             </a>
                                         </div>
-                                        <h6 class="slide-sub-title white-color--- animated"><span><i class="fas fa-home"></i></span> وكالة عقارات</h6>
-                                        <h1 class="slide-title animated ">ابحث عن حلمك <br> البيت من قبلنا</h1>
-                                        <div class="slide-brief animated">
+                                        <h6 class="slide-sub-title white-color--- animated text-right"><span><i class="fas fa-home"></i></span> وكالة عقارات</h6>
+                                        <h1 class="slide-title animated text-right">ابحث عن حلمك <br> البيت من قبلنا</h1>
+                                        <div class="slide-brief animated text-right">
                                             <p>لوريم إيبسوم جزر معزز الخصومات. النوم والألم؟لوريم إيبسوم جزر معزز الخصومات. النوم والألم؟</p>
                                         </div>
-                                        <div class="btn-wrapper animated">
+                                        <div class="btn-wrapper animated text-right">
                                             <a href="about.html" class="theme-btn-1 btn btn-effect-1">استفسر</a>
                                             <a class="ltn__video-play-btn bg-white" href="https://www.youtube.com/embed/HnbMYzdjuBs?autoplay=1&amp;showinfo=0" data-rel="lightcase">
                                                 <i class="icon-play  ltn__secondary-color"></i>
@@ -44,14 +44,18 @@
                     </div>
                 </div>
             </div>
+
             <!-- ltn__slide-item -->
             <div class="ltn__slide-item ltn__slide-item-2  ltn__slide-item-3-normal ltn__slide-item-3">
                 <div class="ltn__slide-item-inner  text-right text-end">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12 align-self-center">
+                                <div class="slide-item-img slide-img-right">
+                                    <img src="{{ asset('front/assets/img/slider/21.png ') }}" alt="#">
+                                </div>
                                 <div class="slide-item-info">
-                                    <div class="slide-item-info-inner ltn__slide-animation">
+                                    <div class="slide-item-info-inner ltn__slide-animation text-right">
                                         <h6 class="slide-sub-title white-color--- animated"><span><i class="fas fa-home"></i></span> وكالة عقارات</h6>
                                         <h1 class="slide-title animated ">المكان الصحيح <br>العثور على المنزل</h1>
                                         <div class="slide-brief animated">
@@ -63,18 +67,20 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="slide-item-img slide-img-left">
-                                    <img src="{{ asset('front/assets/img/slider/21.png ') }}" alt="#">
-                                </div>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!--  -->
         </div>
     </div>
     <!-- SLIDER AREA END -->
+
+
+
 
     <!-- CAR DEALER FORM AREA START -->
     <div class="ltn__car-dealer-form-area mt--65 mt-120 pb-115---">

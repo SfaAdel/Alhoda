@@ -1,7 +1,7 @@
 <!-- Layout Extend -->
 @extends('admin.layouts.app')
 <!-- SEO Section -->
-@section('page.title', 'مراجعي الكتب')
+@section('page.title', 'قائمة المديرين')
 <!-- Start Content Section -->
 @section('content')
 
@@ -22,7 +22,7 @@ $roleMapping = [
         <span class="icon is-small">
           <i class="fa fa-plus-circle"></i>
         </span>
-                <span>اضافة مراجع</span>
+                <span>قائمة المديرين</span>
             </a>
         </div>
         <!-- End Card Header -->

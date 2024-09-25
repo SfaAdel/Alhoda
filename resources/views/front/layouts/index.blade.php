@@ -12,7 +12,7 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    {{-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" /> --}}
     {{-- Font Awesome --}}
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}">
 
@@ -25,6 +25,7 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <!-- Main CSS File -->
     <link href="{{ asset('front/assets/css/main.css') }}" rel="stylesheet">
@@ -39,6 +40,9 @@
     <link rel="stylesheet" href="{{ asset('front/assets/css/style.css')}}">
     <!-- Responsive css -->
     <link rel="stylesheet" href="{{ asset('front/assets/css/responsive.css')}}">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
 </head>
 
 <body>
@@ -78,24 +82,40 @@
     <script src="{{ asset('front/assets/js/main.js') }}"></script>
 
     <!-- Vendor JS Files -->
-    <script src="{{ asset('front/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    {{-- <script src="{{ asset('front/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('front/assets/vendor/php-email-form/validate.js') }}"></script>
     <script src="{{ asset('front/assets/vendor/aos/aos.js') }}"></script>
     <script src="{{ asset('front/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
     <script src="{{ asset('front/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ asset('front/assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
     <script src="{{ asset('front/assets/vendor/imagesloaded/imagesloaded.pkgd.min.js') }}"></script>
-    <script src="{{ asset('front/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('front/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script> --}}
 
     <!-- Include jQuery, Popper.js, and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> --}}
+    {{-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> --}}
+    {{-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script> --}}
 
+<!-- Slick Carousel JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+$(window).on('load', function() {
+    $('.ltn__slide-one-active').slick({
+        rtl: true, // Enables right-to-left mode for Arabic
+        arrows: true,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
+    });
+});
+
+</script>
 
 </body>
 </html>

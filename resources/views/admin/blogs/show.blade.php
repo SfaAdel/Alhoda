@@ -13,19 +13,7 @@
             </h1>
             <!-- Start Card Content -->
             <div class="card-content">
-                <div class="field is-horizontal">
-                    <div class="field-label is-normal">
-                        <label class="label">التصنيف التابع لها</label>
-                    </div>
-                    <div class="field-body">
-                        <div class="field">
-                            <div class="control">
-                                {{ $blog->category->name }}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <hr />
+
                 <div class="field is-horizontal">
                     <div class="field-label is-normal">
                         <label class="label">العنوان الرئيسي</label>

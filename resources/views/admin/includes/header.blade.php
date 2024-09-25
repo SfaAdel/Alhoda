@@ -67,7 +67,7 @@
         <div class="navbar-item has-dropdown is-hoverable">
           <a class="navbar-link " href="#">
             <figure class="image is-48x48 avatar">
-              <img src="{{ asset('/front/assets/img/logo2.png') }}">
+              <img src="{{ asset('front/assets/img/logo.png') }}">
             </figure>
           </a>
           <div class="navbar-dropdown is-left">

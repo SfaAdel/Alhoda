@@ -27,9 +27,12 @@ Route::group([
     // Route::patch('categories/{category}', [CategoryController::class, 'update'])->name('categories.update');
     Route::resource('tags', TagController::class, ['except' => 'show']);
     Route::resource('blogs', BlogController::class);
-    Route::resource('blogs', BlogController::class);
     Route::resource('contacts', ContactController::class);
-    Route::resource('Properties', PropertyController::class);
+    Route::resource('properties', PropertyController::class);
+
+
+    // Route::patch('/Properties/{property}', [PropertyController::class, 'destroy'])->name('admin.Properties.destroy');
+
 
     // Route::patch('blogs/{blog}', [BlogController::class, 'update'])->name('blogs.update');
 

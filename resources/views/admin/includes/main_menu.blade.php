@@ -6,9 +6,9 @@
 
     <collapse-item title="العقارات" icon="fa-solid fa-city">
         @if (auth('admin')->user()->role == 'super_admin' || auth('admin')->user()->role == 'data_entry')
-            <a class="link-item" href="{{ route('admin.Properties.create') }}">اضافة عقار</a>
+            <a class="link-item" href="{{ route('admin.properties.create') }}">اضافة عقار</a>
         @endif
-        <a class="link-item" href="{{ route('admin.Properties.index') }}">قائمة العقارات</a>
+        <a class="link-item" href="{{ route('admin.properties.index') }}">قائمة العقارات</a>
     </collapse-item>
     <collapse-item title="المدونات" icon="fa-solid fa-newspaper">
         @if (auth('admin')->user()->role == 'super_admin' || auth('admin')->user()->role == 'data_entry')
@@ -26,7 +26,12 @@
     <a class="link-item" href="{{ route('admin.contacts.index') }}"> <i class="fa fa-envelope"></i><span>رسائل
             التواصل</span> </a>
 
-
+    @if (auth('admin')->user()->role == 'super_admin')
+        <collapse-item title=" الادارة" icon="fa fa-user-lock">
+            <a class="link-item" href="{{ route('admin.admins.create') }}">اضافة مدير</a>
+            <a class="link-item" href="{{ route('admin.admins.index') }}">قائمة المديرين</a>
+        </collapse-item>
+    @endif
     <a href="{{ route('admin.logout') }}"
         onclick="event.preventDefault();
                 document.getElementById('logout-form').submit();"

@@ -6,7 +6,7 @@
         <div class="field-body">
             <div class="field">
                 <div class="control">
-                    {!! Form::text('name', null, ['class' => 'input' , 'required'] )!!}
+                    {!! Form::text('name', null, ['class' => 'input', 'required']) !!}
                 </div>
             </div>
         </div>
@@ -19,7 +19,7 @@
         <div class="field-body">
             <div class="field">
                 <div class="control">
-                    {!! Form::text('email', null, ['class' => 'input' , 'required'] )!!}
+                    {!! Form::text('email', null, ['class' => 'input', 'required']) !!}
                 </div>
             </div>
         </div>
@@ -32,10 +32,11 @@
         <div class="field-body">
             <div class="field">
                 <div class="control has-icon has-icon-right ">
-                    @if(isset($admin))
-                        <input class="input" value="{{ isset($admin) ? $admin->password : null }}" type="password" name="password">
+                    @if (isset($admin))
+                        <input class="input" value="{{ isset($admin) ? $admin->password : null }}" type="password"
+                            name="password">
                     @else
-                        {!! Form::password('password', null, ['class' => 'input' , 'required'] )!!}
+                        {!! Form::password('password', null, ['class' => 'input', 'required']) !!}
                     @endif
                 </div>
             </div>
@@ -50,16 +51,19 @@
             <div class="field">
                 <div class="control">
                     <label class="radio">
-                        <input type="radio" name="role" value="admin" @if(isset($admin) && $admin->active) checked @else checked @endif>
-مراجع
+                        <input type="radio" name="role" value="admin"
+                            @if (isset($admin) && $admin->active) checked @else checked @endif>
+                        مراجع
                     </label>
                     <label class="radio">
-                        <input type="radio" name="role" value="data_entry" @if(isset($admin) && !$admin->active) checked  @endif>
-                         مدخل بيانات
+                        <input type="radio" name="role" value="data_entry"
+                            @if (isset($admin) && !$admin->active) checked @endif>
+                        مدخل بيانات
                     </label>
                     <label class="radio">
-                        <input type="radio" name="role" value="super_admin" @if(isset($admin) && !$admin->active) checked  @endif>
-                         مدير
+                        <input type="radio" name="role" value="super_admin"
+                            @if (isset($admin) && !$admin->active) checked @endif>
+                        مدير
                     </label>
                 </div>
             </div>
