@@ -20,6 +20,8 @@ class DatabaseSeeder extends Seeder
         // ]);
         $this->call(UserSeeder::class);
         $this->call(AdminSeeder::class);
+        $this->call(PropertySeeder::class);
+        $this->call(TagSeeder::class);
 
     }
 }

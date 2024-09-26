@@ -20,8 +20,13 @@ return new class extends Migration
             $table->decimal('property_space')->nullable();
             $table->boolean('garden')->default(0)->nullable();
             $table->decimal('garden_space')->nullable();
+
             $table->integer('number_of_floors')->default(1)->nullable();
+            $table->integer('number_of_rooms')->default(0)->nullable();
+            $table->integer('number_of_bathrooms')->default(0)->nullable();
+            // $table->date('year_built')->default(1)->nullable();
             $table->text('long_description')->nullable();
+            $table->text('location')->nullable();
             $table->json('images')->nullable();
             $table->string('video')->nullable();
             $table->string('city')->nullable();

@@ -3,10 +3,6 @@
 @section('page.description','')
 
 @section('content')
-<!-- Body main wrapper start -->
-<div class="body-wrapper">
-
-
 
     <!-- BREADCRUMB AREA START -->
     <div class="ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image "  data-bs-bg="{{ asset('front/assets/img/bg/14.jpg') }}">

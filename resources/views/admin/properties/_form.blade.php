@@ -205,6 +205,44 @@
         </div>
     </div>
 
+    {{-- number_of_rooms --}}
+    <hr />
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label ">عدد الغرف</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    {!! Form::number('number_of_rooms', null, [
+                        'class' => 'input',
+                        'min' => 0,
+                        'id' => 'number_of_rooms',
+                    ]) !!}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- number_of_bathrooms --}}
+    <hr />
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label ">عدد الحمامات</label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    {!! Form::number('number_of_bathrooms', null, [
+                        'class' => 'input',
+                        'min' => 0,
+                        'id' => 'number_of_bathrooms',
+                    ]) !!}
+                </div>
+            </div>
+        </div>
+    </div>
+
     {{-- garden --}}
     <hr />
     <div class="field is-horizontal">
@@ -330,6 +368,20 @@
         </div>
     </div>
 
+    {{-- location --}}
+    <hr />
+    <div class="field is-horizontal">
+        <div class="field-label is-normal">
+            <label class="label ">رابط موقع العقار علي الخريطة </label>
+        </div>
+        <div class="field-body">
+            <div class="field">
+                <div class="control">
+                    {!! Form::text('location', null, ['class' => 'input', 'required']) !!}
+                </div>
+            </div>
+        </div>
+    </div>
 
     {{-- Multiple images --}}
     <hr />
@@ -390,7 +442,7 @@
     <hr />
     <div class="field is-horizontal">
         <div class="field-label is-normal">
-            <label class="label required">صورة بانر </label>
+            <label class="label required"> الصورة الرئيسية </label>
         </div>
         <div class="field-body">
             <div class="field">

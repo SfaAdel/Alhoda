@@ -35,6 +35,8 @@ class Property extends Model
         'property_space',
 
     ];
+
+
     public function tags()
     {
         return $this->belongsToMany(Tag::class);

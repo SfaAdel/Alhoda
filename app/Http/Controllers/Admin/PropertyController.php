@@ -60,11 +60,14 @@ class PropertyController extends Controller
         }
 
         // Save property details
-        $property = Property::create($request->except('images', 'video', '_token') + [
+        $property = Property::create($request->except('images', 'video','tags','banner', '_token') + [
             'images' => json_encode($imageNames),
             'video' => $videoName,
-            'bannar' => $bannerImageName,
+            'banner' => $bannerImageName,
         ]);
+
+        $property->tags()->sync($request->input('tags', []));
+
 
         return redirect()->route('admin.properties.index')->with('success', 'تم اضافة بيانات العقار بنجاح');
     }
@@ -99,7 +102,7 @@ class PropertyController extends Controller
     public function update(PropertyRequest $request, Property $property)
     {
         // Update the property details except for image, video, and banner
-        $property->update($request->except('images', 'video', 'banner', '_token', '_method'));
+        $property->update($request->except('images', 'video','tags', 'banner', '_token', '_method'));
 
          // Handle images update
     if ($request->hasFile('images')) {
@@ -138,6 +141,8 @@ class PropertyController extends Controller
             // Update the banner field in the database
             $property->update(['banner' => $bannerName]);
         }
+
+        $property->tags()->sync(ids: $request->input('tags', []));
 
         // Redirect to the properties index with a success message
         return redirect()->route('admin.properties.index')->with('success', 'تم تعديل بيانات العقار بنجاح');
