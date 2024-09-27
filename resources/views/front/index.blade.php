@@ -93,14 +93,14 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ltn__car-dealer-form-tab">
-                        <div class="ltn__tab-menu  text-uppercase d-none">
+                        {{-- <div class="ltn__tab-menu  text-uppercase d-none">
                             <div class="nav">
                                 <a class="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i
                                         class="fas fa-car"></i>Find A Car</a>
                                 <a data-bs-toggle="tab" href="#ltn__form_tab_1_2" class=""><i
                                         class="far fa-user"></i>Get a Dealer</a>
                             </div>
-                        </div>
+                        </div> --}}
                         <div class="tab-content bg-white box-shadow-1 ltn__border position-relative pb-10">
                             <div class="tab-pane fade active show" id="ltn__form_tab_1_1">
                                 <div class="car-dealer-form-inner">
@@ -130,10 +130,8 @@
                                             class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-calendar---- col-lg-3 col-md-6">
                                             <select class="nice-select">
                                                 <option>نوع العقار</option>
-                                                <option>Apartment</option>
-                                                <option>Co-op</option>
-                                                <option>Condo</option>
-                                                <option>Single Family Home</option>
+                                                <option>بيع</option>
+                                                <option>ايجار</option>
                                             </select>
                                         </div>
                                         <div
@@ -467,17 +465,18 @@
                                     <div class="product-img-gallery">
                                         <ul>
                                             <li>
-                                                <a href="tel:+{{ $property->phone }}"><i
-                                                        class="fas fa-phone"></i>
+                                                <a href="tel:+{{ $property->phone }}"><i class="fas fa-phone"></i>
                                                 </a>
                                             </li>
                                             <li>
-                                                <a href="{{ route('property.details', $property->id) }}"><i class="fas fa-camera"></i>
+                                                <a href="{{ route('property.details', $property->id) }}"><i
+                                                        class="fas fa-camera"></i>
                                                     {{ count(json_decode($property->images, true)) }}</a>
                                             </li>
                                             @if ($property->video !== null)
                                                 <li>
-                                                    <a href="{{ route('property.details', $property->id) }}"><i class="fas fa-film"></i> 1</a>
+                                                    <a href="{{ route('property.details', $property->id) }}"><i
+                                                            class="fas fa-film"></i> 1</a>
                                                 </li>
                                             @endif
                                         </ul>
@@ -851,184 +850,64 @@
     </div>
     <!-- BRAND LOGO AREA END -->
 
-    <!-- BLOG AREA START (blog-3) -->
-    <div class="ltn__blog-area pt-115--- pb-70 text-right">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">المدونات</h6>
-                        <h1 class="section-title">أحدث المقالات</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row  ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="{{ asset('front/assets/img/blog/1.jpg ') }}"
-                                    alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Decorate</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">10 Brilliant Ways To Decorate Your
-                                    Home</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
+    @if (!$blogs->isEmpty())
+
+        <!-- BLOG AREA START (blog-3) -->
+        <div class="ltn__blog-area pt-115--- pb-70 text-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-title-area ltn__section-title-2--- text-center mt-3">
+                            <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">المدونات</h6>
+                            <h1 class="section-title">أحدث المقالات</h1>
                         </div>
                     </div>
                 </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/2.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Interior</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">The Most Inspiring Interior Design Of
-                                    2021</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>July 23, 2021</li>
-                                    </ul>
+                <div class="row  ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
+                    <!-- Blog Item -->
+                    @foreach ($blogs as $blog)
+                        <div class="col-lg-12">
+                            <div class="ltn__blog-item ltn__blog-item-3">
+                                <div class="ltn__blog-img">
+                                    <a href="{{ route('blog.details', $blog->id) }}"><img
+                                            src="{{ asset('images/blogs/' . $blog->icon) }}"alt="#"></a>
                                 </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
+                                <div class="ltn__blog-brief">
+                                    <div class="ltn__blog-meta">
+                                        <ul>
+                                            <li class="ltn__blog-author">
+                                                <a href="#"><i class="far fa-user"></i>تم النشر بواسطة: مدير</a>
+                                            </li>
+                                            <li class="ltn__blog-tags">
+                                                <a href="#"><i
+                                                        class="fas fa-tags"></i>{{ $property->tags->first()->name }}</a>
+
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h3 class="ltn__blog-title"><a
+                                            href="{{ route('blog.details', $blog->id) }}">{{ $blog->short_description }}</a></h3>
+                                    <div class="ltn__blog-meta-btn">
+                                        <div class="ltn__blog-meta">
+                                            <ul>
+                                                <li class="ltn__blog-date"><i
+                                                        class="far fa-calendar-alt"></i>{{ $blog->created_at }}</li>
+                                            </ul>
+                                        </div>
+                                        <div class="ltn__blog-btn">
+                                            <a href="{{ route('blog.details', $blog->id) }}">قراءة المزيد</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
+
                 </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/3.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Estate</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">Recent Commercial Real Estate
-                                    Transactions</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>May 22, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/4.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Room</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">Renovating a Living Room? Experts
-                                    Share Their Secrets</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/5.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Trends</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">7 home trends that will shape your
-                                    house in 2021</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
             </div>
         </div>
-    </div>
-    <!-- BLOG AREA END -->
-
+        <!-- BLOG AREA END -->
+    @endif
 
 @endsection

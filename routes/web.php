@@ -33,12 +33,14 @@ Route::get('/dashboard', function () {
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/properties', [HomeController::class, 'properties'])->name('properties');
 Route::get('/property-details/{id}', [HomeController::class, 'property_details'])->name('property.details');
-Route::get('/properties/tag/{tag}', [HomeController::class, 'filterByTag'])->name('properties.filterByTag');
+Route::get('/properties/tag/{tag}', [HomeController::class, 'filterByTag'])->name(name: 'properties.filterByTag');
+Route::get('/blogs/tag/{tag}', [HomeController::class, 'filterBlogsByTag'])->name(name: 'blogs.filterByTag');
 
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::get('/about', [HomeController::class, 'about'])->name('about');
 Route::get('/blogs', [HomeController::class, 'blogs'])->name('blogs');
 Route::get('/blog-details', [HomeController::class, 'blog_details'])->name('blog_details');
+Route::get('/blog-details/{id}', [HomeController::class, 'blog_details'])->name('blog.details');
 
 
 

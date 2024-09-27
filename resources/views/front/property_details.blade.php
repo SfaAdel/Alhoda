@@ -1,6 +1,6 @@
 @extends('front/layouts.index')
-@section('page.title', '{{ $property->name }}')
-@section('page.description', '{{ $property->short_description }}')
+@section('page.title',  $property->name)
+@section('page.description', $property->short_description)
 
 @section('content')
 
@@ -104,9 +104,43 @@
                                 <li><label> المدينة :</label> <span>{{ $property->city }} </span></li>
                                 <li><label> المنطقة :</label> <span>{{ $property->area }} </span></li>
                                 <li><label> القطاع :</label> <span>{{ $property->sector }} </span></li>
+                                <li><label>نوع التشطيب :</label>
+                                    <span>
+                                        @switch($property->finishing_type)
+                                            @case('full')
+                                                تشطيب كامل
+                                                @break
+                                            @case('almost')
+                                                3/4 تشطيب
+                                                @break
+                                            @case('half')
+                                                نص تشطيب
+                                                @break
+                                            @case('without')
+                                                بدون تشطيب
+                                                @break
+                                        @endswitch
+                                    </span>
+                                </li>
 
-                                <li><label>نوع التشطيب :</label> <span>{{ $property->finishing_type }} </span></li>
-                                <li><label>نوع تشطيب الواجهة :</label> <span>{{ $property->facade_finishing }} </span></li>
+                                <li><label>نوع تشطيب الواجهة :</label>
+                                    <span>
+                                        @switch($property->facade_finishing)
+                                            @case('full')
+                                                تشطيب كامل
+                                                @break
+                                            @case('almost')
+                                                3/4 تشطيب
+                                                @break
+                                            @case('half')
+                                                نص تشطيب
+                                                @break
+                                            @case('without')
+                                                بدون تشطيب
+                                                @break
+                                        @endswitch
+                                    </span>
+                                </li>
 
                             </ul>
 
