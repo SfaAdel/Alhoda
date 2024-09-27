@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Front\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -43,6 +44,8 @@ Route::get('/blog-details', [HomeController::class, 'blog_details'])->name('blog
 Route::get('/blog-details/{id}', [HomeController::class, 'blog_details'])->name('blog.details');
 
 Route::get('/properties/filter', [HomeController::class, 'filter'])->name('properties.filter');
+
+Route::post('/contacts', [ContactController::class, 'store'])->name('contacts.store');
 
 
 
