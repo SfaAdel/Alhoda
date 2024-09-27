@@ -89,7 +89,7 @@
 
     <!-- CAR DEALER FORM AREA START -->
     <div class="ltn__car-dealer-form-area mt--65 mt-120 pb-115---">
-        <div class="container">
+        <div class="container text-center">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ltn__car-dealer-form-tab">
@@ -104,90 +104,55 @@
                         <div class="tab-content bg-white box-shadow-1 ltn__border position-relative pb-10">
                             <div class="tab-pane fade active show" id="ltn__form_tab_1_1">
                                 <div class="car-dealer-form-inner">
-                                    <form action="#" class="ltn__car-dealer-form-box row">
-                                        <div
-                                            class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-car---- col-lg-3 col-md-6">
-                                            <select class="nice-select">
-                                                <option>اختر المنطقة</option>
-                                                <option>chicago</option>
-                                                <option>London</option>
-                                                <option>Los Angeles</option>
-                                                <option>New York</option>
-                                                <option>New Jersey</option>
+                                    <form action="{{ route('properties.filter') }}" method="GET" class="ltn__car-dealer-form-box row">
+                                        <div class="ltn__car-dealer-form-item col-lg-3 col-md-6">
+                                            <select name="city" class="nice-select">
+                                                <option value="">اختر المنطقة</option>
+                                                <option value="القاهرة">القاهرة</option>
+                                                <option value="الجيزة">الجيزة</option>
+                                                <option value="الإسكندرية">الإسكندرية</option>
+                                                <option value="الأقصر">الأقصر</option>
+                                                <option value="أسوان">أسوان</option>
+                                                <option value="شرم الشيخ">شرم الشيخ</option>
+                                                <option value="الغردقة">الغردقة</option>
+                                                <option value="المنصورة">المنصورة</option>
+                                                <option value="دمياط">دمياط</option>
+                                                <option value="السويس">السويس</option>
+                                                <option value="بورسعيد">بورسعيد</option>
+                                                <option value="الإسماعيلية">الإسماعيلية</option>
+                                                <option value="العريش">العريش</option>
+                                                <option value="طنطا">طنطا</option>
+                                                <option value="بني سويف">بني سويف</option>
+                                                <option value="المنيا">المنيا</option>
+                                                <option value="الفيوم">الفيوم</option>
+                                                <option value="سوهاج">سوهاج</option>
+                                                <option value="قنا">قنا</option>
+                                                <option value="مرسى مطروح">مرسى مطروح</option>
+                                                <option value="دمنهور">دمنهور</option>
+                                                <option value="الزقازيق">الزقازيق</option>
+                                                <option value="حلوان">حلوان</option>
+                                                <option value="أسيوط">أسيوط</option>
+                                                <option value="مطروح">مطروح</option>
+                                                <option value="كفر الشيخ">كفر الشيخ</option>
+                                                <option value="السادات">السادات</option>
+                                                <option value="الشيخ زايد">الشيخ زايد</option>
+                                                <option value="السادس من أكتوبر">السادس من أكتوبر</option>
+                                                <option value="العاشر من رمضان">العاشر من رمضان</option>
+                                                <!-- Add more cities if required -->
                                             </select>
                                         </div>
-                                        <div
-                                            class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-meter---- col-lg-3 col-md-6">
-                                            <select class="nice-select">
-                                                <option> حالة العقار</option>
-                                                <option>Open house</option>
-                                                <option>Rent</option>
-                                                <option>Sale</option>
-                                                <option>Sold</option>
+                                        <div class="ltn__car-dealer-form-item col-lg-3 col-md-6">
+                                            <select name="property_type" class="nice-select">
+                                                <option value="">نوع العقار</option>
+                                                <option value="sale">بيع</option>
+                                                <option value="rent">ايجار</option>
                                             </select>
                                         </div>
-                                        <div
-                                            class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-calendar---- col-lg-3 col-md-6">
-                                            <select class="nice-select">
-                                                <option>نوع العقار</option>
-                                                <option>بيع</option>
-                                                <option>ايجار</option>
-                                            </select>
-                                        </div>
-                                        <div
-                                            class="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-3 col-md-6">
-                                            <div class="btn-wrapper text-center mt-0">
-                                                <!-- <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> -->
-                                                <a href="shop-right-sidebar.html"
-                                                    class="btn theme-btn-1 btn-effect-1 text-uppercase">بحث</a>
-                                            </div>
+                                        <div class="ltn__car-dealer-form-item col-lg-3 col-md-6">
+                                            <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">بحث</button>
                                         </div>
                                     </form>
-                                </div>
-                            </div>
-                            <div class="tab-pane fade" id="ltn__form_tab_1_2">
-                                <div class="car-dealer-form-inner">
-                                    <form action="#" class="ltn__car-dealer-form-box row">
-                                        <div
-                                            class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-car---- col-lg-3 col-md-6">
-                                            <select class="nice-select">
-                                                <option>اختر المنطقة</option>
-                                                <option>chicago</option>
-                                                <option>London</option>
-                                                <option>Los Angeles</option>
-                                                <option>New York</option>
-                                                <option>New Jersey</option>
-                                            </select>
-                                        </div>
-                                        <div
-                                            class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-meter---- col-lg-3 col-md-6">
-                                            <select class="nice-select">
-                                                <option> حالة العقار</option>
-                                                <option>Open house</option>
-                                                <option>Rent</option>
-                                                <option>Sale</option>
-                                                <option>Sold</option>
-                                            </select>
-                                        </div>
-                                        <div
-                                            class="ltn__car-dealer-form-item ltn__custom-icon---- ltn__icon-calendar---- col-lg-3 col-md-6">
-                                            <select class="nice-select">
-                                                <option>نوع العقار</option>
-                                                <option>Apartment</option>
-                                                <option>Co-op</option>
-                                                <option>Condo</option>
-                                                <option>Single Family Home</option>
-                                            </select>
-                                        </div>
-                                        <div
-                                            class="ltn__car-dealer-form-item ltn__custom-icon ltn__icon-calendar col-lg-3 col-md-6">
-                                            <div class="btn-wrapper text-center mt-0">
-                                                <!-- <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">Search Inventory</button> -->
-                                                <a href="shop-right-sidebar.html"
-                                                    class="btn theme-btn-1 btn-effect-1 text-uppercase">بحث</a>
-                                            </div>
-                                        </div>
-                                    </form>
+
                                 </div>
                             </div>
                         </div>
@@ -207,12 +172,7 @@
                         <img src="{{ asset('front/assets/img/others/17.jpeg ') }}" alt="About Us Image">
                         <div class="about-us-img-info about-us-img-info-2 about-us-img-info-3">
 
-                            {{-- <div class="ltn__video-img ltn__animation-pulse1">
-                                <img src="{{ asset('front/assets/img/others/8.png ') }}" alt="video popup bg image">
-                                <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0"  data-rel="lightcase:myCollection">
-                                    <i class="fa fa-play"></i>
-                                </a>
-                            </div> --}}
+
                         </div>
                     </div>
                 </div>

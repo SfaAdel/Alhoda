@@ -74,28 +74,10 @@
                         <nav>
                             <div class="ltn__main-menu">
                                 <ul>
-                                    <li class="menu-icon"><a href="{{ route('home') }}" title="الرئيسية">الرئيسية</a>
-                                    </li>
+                                    <li class="menu-icon"><a href="{{ route('home') }}" title="الرئيسية">الرئيسية</a></li>
                                     <li class="menu-icon"><a href="{{ route('about') }}" title="من نحن">من نحن</a></li>
-                                    <li class="menu-icon"><a href="{{ route('properties') }}" title="العقارات">العقارات</a>
-                                        <ul>
-                                            <li><a href="shop.html">Shop</a></li>
-                                            <li><a href="shop-grid.html">Shop Grid</a></li>
-                                            <li><a href="shop-left-sidebar.html">Shop Left sidebar</a></li>
-                                            <li><a href="shop-right-sidebar.html">Shop right sidebar</a></li>
-                                            <li><a href="product-details.html">Shop details </a></li>
-                                            <li><a href="#">Other Pages <span class="float-end">>></span></a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-icon"><a href="{{ route('blogs') }}" title="المدونة">المدونة</a>
-                                        <ul>
-                                            <li><a href="blog.html">News</a></li>
-                                            <li><a href="blog-grid.html">News Grid</a></li>
-                                            <li><a href="blog-left-sidebar.html">News Left sidebar</a></li>
-                                            <li><a href="blog-right-sidebar.html">News Right sidebar</a></li>
-                                            <li><a href="blog-details.html">News details</a></li>
-                                        </ul>
-                                    </li>
+                                    <li class="menu-icon"><a href="{{ route('properties') }}" title="العقارات">العقارات</a></li>
+                                    <li class="menu-icon"><a href="{{ route('blogs') }}" title="المدونة">المدونة</a></li>
                                     <li><a href="{{ route('contact') }}" title="تواصل معنا">تواصل معنا</a></li>
                                 </ul>
                             </div>
@@ -103,41 +85,7 @@
                     </div>
                 </div>
                 <div class="col ltn__header-options ltn__header-options-2 mb-sm-20">
-                    <!-- header-search-1 -->
-                    <div class="header-search-wrap">
-                        <div class="header-search-1">
-                            <div class="search-icon">
-                                <i class="icon-search for-search-show"></i>
-                                <i class="icon-cancel  for-search-close"></i>
-                            </div>
-                        </div>
-                        <div class="header-search-1-form">
-                            <form id="#" method="get" action="#">
-                                <input type="text" name="search" value="" placeholder="Search here..." />
-                                <button type="submit">
-                                    <span><i class="icon-search"></i></span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- mini-cart -->
 
-                    <!-- mini-cart -->
-                    <!-- Mobile Menu Button -->
-                    <div class="mobile-menu-toggle d-xl-none">
-                        <a href="#ltn__utilize-mobile-menu" class="ltn__utilize-toggle">
-                            <svg viewBox="0 0 800 600">
-                                <path
-                                    d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200"
-                                    id="top"></path>
-                                <path d="M300,320 L540,320" id="middle"></path>
-                                <path
-                                    d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190"
-                                    id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) ">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
                 </div>
             </div>
         </div>
@@ -158,10 +106,10 @@
             <button class="ltn__utilize-close">×</button>
         </div>
         <div class="ltn__utilize-menu-search-form">
-            <form action="#">
+            {{-- <form action="#">
                 <input type="text" placeholder="بحث . . .">
                 <button><i class="fas fa-search"></i></button>
-            </form>
+            </form> --}}
         </div>
         <div class="ltn__utilize-menu">
             <ul>

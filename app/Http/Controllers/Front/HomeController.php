@@ -165,4 +165,24 @@ class HomeController extends Controller
         // Return the filtered properties view with additional data
         return view('front.blogs', compact('blogs', 'tag', 'tags', 'latestBlogs', 'sharedTagProperties'));
     }
+
+    public function filter(Request $request)
+    {
+        $query = Property::query();
+
+        if ($request->filled('city')) {
+            $query->where('city', $request->city);
+        }
+
+        if ($request->filled('property_type')) {
+            $query->where('property_type', $request->property_type);
+        }
+
+        // Retrieve the filtered properties
+        $properties = $query->where('active', 1)->get();
+        $tags = Tag::all();
+        // Pass the filtered properties to the view
+        return view('front.properties', compact('properties','tags'));
+    }
+
 }

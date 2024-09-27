@@ -25,6 +25,83 @@
     </div>
     <!-- BREADCRUMB AREA END -->
 
+    <!-- CAR DEALER FORM AREA START -->
+    <div class="ltn__car-dealer-form-area mt--65 mt-120 pb-115---">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ltn__car-dealer-form-tab">
+                        {{-- <div class="ltn__tab-menu  text-uppercase d-none">
+                            <div class="nav">
+                                <a class="active show" data-bs-toggle="tab" href="#ltn__form_tab_1_1"><i
+                                        class="fas fa-car"></i>Find A Car</a>
+                                <a data-bs-toggle="tab" href="#ltn__form_tab_1_2" class=""><i
+                                        class="far fa-user"></i>Get a Dealer</a>
+                            </div>
+                        </div> --}}
+                        <div class="tab-content bg-white box-shadow-1 ltn__border position-relative pb-10 text-center" style="z-index: 10000">
+                            <div class="tab-pane fade active show" id="ltn__form_tab_1_1">
+                                <div class="car-dealer-form-inner">
+                                    <form action="{{ route('properties.filter') }}" method="GET" class="ltn__car-dealer-form-box row">
+                                        <div class="ltn__car-dealer-form-item col-lg-3 col-md-6">
+                                            <select name="city" class="nice-select">
+                                                <option value="">اختر المنطقة</option>
+                                                <option value="القاهرة">القاهرة</option>
+                                                <option value="الجيزة">الجيزة</option>
+                                                <option value="الإسكندرية">الإسكندرية</option>
+                                                <option value="الأقصر">الأقصر</option>
+                                                <option value="أسوان">أسوان</option>
+                                                <option value="شرم الشيخ">شرم الشيخ</option>
+                                                <option value="الغردقة">الغردقة</option>
+                                                <option value="المنصورة">المنصورة</option>
+                                                <option value="دمياط">دمياط</option>
+                                                <option value="السويس">السويس</option>
+                                                <option value="بورسعيد">بورسعيد</option>
+                                                <option value="الإسماعيلية">الإسماعيلية</option>
+                                                <option value="العريش">العريش</option>
+                                                <option value="طنطا">طنطا</option>
+                                                <option value="بني سويف">بني سويف</option>
+                                                <option value="المنيا">المنيا</option>
+                                                <option value="الفيوم">الفيوم</option>
+                                                <option value="سوهاج">سوهاج</option>
+                                                <option value="قنا">قنا</option>
+                                                <option value="مرسى مطروح">مرسى مطروح</option>
+                                                <option value="دمنهور">دمنهور</option>
+                                                <option value="الزقازيق">الزقازيق</option>
+                                                <option value="حلوان">حلوان</option>
+                                                <option value="أسيوط">أسيوط</option>
+                                                <option value="مطروح">مطروح</option>
+                                                <option value="كفر الشيخ">كفر الشيخ</option>
+                                                <option value="السادات">السادات</option>
+                                                <option value="الشيخ زايد">الشيخ زايد</option>
+                                                <option value="السادس من أكتوبر">السادس من أكتوبر</option>
+                                                <option value="العاشر من رمضان">العاشر من رمضان</option>
+                                                <!-- Add more cities if required -->
+                                            </select>
+                                        </div>
+                                        <div class="ltn__car-dealer-form-item col-lg-3 col-md-6">
+                                            <select name="property_type" class="nice-select">
+                                                <option value="">نوع العقار</option>
+                                                <option value="sale">بيع</option>
+                                                <option value="rent">ايجار</option>
+                                            </select>
+                                        </div>
+                                        <div class="ltn__car-dealer-form-item col-lg-3 col-md-6">
+                                            <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">بحث</button>
+                                        </div>
+                                    </form>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CAR DEALER FORM AREA END -->
+
     <div class="widget ltn__tagcloud-widget text-right m-5">
         <h4 class="ltn__widget-title ltn__widget-title-border-2"> الكلمات المفتاحية</h4>
         <ul>

@@ -6,11 +6,11 @@
                 <div class="col-lg-12">
                     <div class="call-to-action-inner call-to-action-inner-6 ltn__secondary-bg position-relative text-center---">
                         <div class="coll-to-info text-color-white">
-                            <h1>Looking for a dream home?</h1>
-                            <p>We can help you realize your dream of a new home</p>
+                            <h1>هل تبحث عن منزل أحلامك؟</h1>
+                            <p>يمكننا مساعدتك في تحقيق حلمك بمنزل جديد</p>
                         </div>
                         <div class="btn-wrapper">
-                            <a class="btn btn-effect-3 btn-white" href="contact.html">Explore Properties <i class="icon-next"></i></a>
+                            <a class="btn btn-effect-3 btn-white" href="{{ route('properties')}}">ابحث عن منزلك <i class="icon-next"></i></a>
                         </div>
                     </div>
                 </div>

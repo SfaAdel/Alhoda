@@ -30,15 +30,10 @@
             <div class="row">
                 <div class="col-lg-6 align-self-center">
                     <div class="about-us-img-wrap about-img-left">
-                        <img src="img/others/13.png" alt="About Us Image">
+                        <img src="{{ asset('front/assets/img/others/17.jpeg ') }}" alt="About Us Image">
                         <div class="about-us-img-info about-us-img-info-2 about-us-img-info-3">
 
-                            <div class="ltn__video-img ltn__animation-pulse1">
-                                <img src="img/others/8.png" alt="video popup bg image">
-                                <a class="ltn__video-icon-2 ltn__video-icon-2-border---" href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0"  data-rel="lightcase:myCollection">
-                                    <i class="fa fa-play"></i>
-                                </a>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -73,9 +68,6 @@
                             <p>"Enimad minim veniam quis nostrud exercitation <br>
                                 llamco laboris. Lorem ipsum dolor sit amet" </p>
                         </div>
-                        <div class="btn-wrapper animated">
-                            <a href="service.html" class="theme-btn-1 btn btn-effect-1">OUR SERVICES</a>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -99,7 +91,7 @@
                     <div class="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
                         <div class="ltn__feature-icon">
                             <!-- <span><i class="flaticon-house"></i></span> -->
-                            <img src="img/icons/icon-img/21.png" alt="#">
+                            <img src=" {{ asset('front/assets/img/icons/icon-img/21.png ') }}" alt="#">
                         </div>
                         <div class="ltn__feature-info">
                             <h3><a href="service-details.html">Buy a home</a></h3>
@@ -112,7 +104,7 @@
                     <div class="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 active">
                         <div class="ltn__feature-icon">
                             <!-- <span><i class="flaticon-house-3"></i></span> -->
-                            <img src="img/icons/icon-img/22.png" alt="#">
+                            <img src="{{ asset('front/assets/img/icons/icon-img/22.png ') }}" alt="#">
                         </div>
                         <div class="ltn__feature-info">
                             <h3><a href="service-details.html">Rent a home</a></h3>
@@ -125,7 +117,7 @@
                     <div class="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
                         <div class="ltn__feature-icon">
                             <!-- <span><i class="flaticon-deal-1"></i></span> -->
-                            <img src="img/icons/icon-img/23.png" alt="#">
+                            <img src="{{ asset('front/assets/img/icons/icon-img/23.png ') }}" alt="#">
                         </div>
                         <div class="ltn__feature-info">
                             <h3><a href="service-details.html">Sell a home</a></h3>
@@ -154,7 +146,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="ltn__team-item ltn__team-item-3---">
                         <div class="team-img">
-                            <img src="img/team/4.jpg" alt="Image">
+                            <img src=" {{ asset('front/assets/img/team/4.jpg ') }}" alt="Image">
                         </div>
                         <div class="team-info">
                             <h4><a href="team-details.html">Rosalina D. William</a></h4>
@@ -172,7 +164,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="ltn__team-item ltn__team-item-3---">
                         <div class="team-img">
-                            <img src="img/team/2.jpg" alt="Image">
+                            <img src=" {{ asset('front/assets/img/team/2.jpg ') }}" alt="Image">
                         </div>
                         <div class="team-info">
                             <h4><a href="team-details.html">Kelian Anderson</a></h4>
@@ -190,7 +182,7 @@
                 <div class="col-lg-4 col-sm-6">
                     <div class="ltn__team-item ltn__team-item-3---">
                         <div class="team-img">
-                            <img src="img/team/5.jpg" alt="Image">
+                            <img src="{{ asset('front/assets/img/team/5.jpg ') }}" alt="Image">
                         </div>
                         <div class="team-info">
                             <h4><a href="team-details.html">Miranda H. Halim</a></h4>
@@ -234,7 +226,7 @@
                                 um dolor sit amet, consecte</p>
                             <div class="ltn__testimoni-info-inner">
                                 <div class="ltn__testimoni-img">
-                                    <img src="img/testimonial/1.jpg" alt="#">
+                                    <img src=" {{ asset('front/assets/img/testimonial/1.jpg ') }}" alt="#">
                                 </div>
                                 <div class="ltn__testimoni-name-designation">
                                     <h5>Jacob William</h5>
@@ -256,7 +248,7 @@
                                 um dolor sit amet, consecte</p>
                             <div class="ltn__testimoni-info-inner">
                                 <div class="ltn__testimoni-img">
-                                    <img src="img/testimonial/2.jpg" alt="#">
+                                    <img src="{{ asset('front/assets/img/testimonial/1.jpg ') }}" alt="#">
                                 </div>
                                 <div class="ltn__testimoni-name-designation">
                                     <h5>Kelian Anderson</h5>
@@ -278,7 +270,7 @@
                                 um dolor sit amet, consecte</p>
                             <div class="ltn__testimoni-info-inner">
                                 <div class="ltn__testimoni-img">
-                                    <img src="img/testimonial/3.jpg" alt="#">
+                                    <img src="{{ asset('front/assets/img/testimonial/3.jpg ') }}" alt="#">
                                 </div>
                                 <div class="ltn__testimoni-name-designation">
                                     <h5>Adam Joseph</h5>
@@ -300,7 +292,7 @@
                                 um dolor sit amet, consecte</p>
                             <div class="ltn__testimoni-info-inner">
                                 <div class="ltn__testimoni-img">
-                                    <img src="img/testimonial/4.jpg" alt="#">
+                                    <img src=" {{ asset('front/assets/img/testimonial/4.jpg ') }}" alt="#">
                                 </div>
                                 <div class="ltn__testimoni-name-designation">
                                     <h5>James Carter</h5>
@@ -316,178 +308,7 @@
     </div>
     <!-- TESTIMONIAL AREA END -->
 
-    <!-- BLOG AREA START (blog-3) -->
-    <div class="ltn__blog-area pt-115--- pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">News & Blogs</h6>
-                        <h1 class="section-title">Leatest News Feeds</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row  ltn__blog-slider-one-active slick-arrow-1 ltn__blog-item-3-normal">
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/1.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Decorate</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">10 Brilliant Ways To Decorate Your Home</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/2.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Interior</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">The Most Inspiring Interior Design Of 2021</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>July 23, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/3.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Estate</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">Recent Commercial Real Estate Transactions</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>May 22, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/4.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Room</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">Renovating a Living Room? Experts Share Their Secrets</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Blog Item -->
-                <div class="col-lg-12">
-                    <div class="ltn__blog-item ltn__blog-item-3">
-                        <div class="ltn__blog-img">
-                            <a href="blog-details.html"><img src="img/blog/5.jpg" alt="#"></a>
-                        </div>
-                        <div class="ltn__blog-brief">
-                            <div class="ltn__blog-meta">
-                                <ul>
-                                    <li class="ltn__blog-author">
-                                        <a href="#"><i class="far fa-user"></i>by: Admin</a>
-                                    </li>
-                                    <li class="ltn__blog-tags">
-                                        <a href="#"><i class="fas fa-tags"></i>Trends</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <h3 class="ltn__blog-title"><a href="blog-details.html">7 home trends that will shape your house in 2021</a></h3>
-                            <div class="ltn__blog-meta-btn">
-                                <div class="ltn__blog-meta">
-                                    <ul>
-                                        <li class="ltn__blog-date"><i class="far fa-calendar-alt"></i>June 24, 2021</li>
-                                    </ul>
-                                </div>
-                                <div class="ltn__blog-btn">
-                                    <a href="blog-details.html">Read more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-            </div>
-        </div>
-    </div>
-    <!-- BLOG AREA END -->
+
 
 
 @endsection

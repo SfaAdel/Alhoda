@@ -42,6 +42,7 @@ Route::get('/blogs', [HomeController::class, 'blogs'])->name('blogs');
 Route::get('/blog-details', [HomeController::class, 'blog_details'])->name('blog_details');
 Route::get('/blog-details/{id}', [HomeController::class, 'blog_details'])->name('blog.details');
 
+Route::get('/properties/filter', [HomeController::class, 'filter'])->name('properties.filter');
 
 
 
