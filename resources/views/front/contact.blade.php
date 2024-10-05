@@ -6,7 +6,7 @@
 
     <!-- BREADCRUMB AREA START -->
     <div class="ltn__breadcrumb-area text-left bg-overlay-white-30 bg-image "
-        data-bs-bg="{{ asset('front/assets/img/bg/14.jpg') }}">
+        data-bs-bg="{{ asset('front/assets/img/bg/14.jpeg') }}">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-right">
@@ -34,6 +34,7 @@
 
 
 
+
     <!-- CONTACT ADDRESS AREA START -->
     <div class="ltn__contact-address-area mb-90">
         <div class="container text-right">
@@ -43,9 +44,9 @@
                         <div class="ltn__contact-address-icon">
                             <img src=" {{ asset('front/assets/img/icons/10.png') }}" alt="Icon Image">
                         </div>
-                        <h3>Email Address</h3>
-                        <p>info@webmail.com <br>
-                            jobs@webexample.com</p>
+                        <h3>عنوان البريد الالكتروني</h3>
+                        <p><a href="mailto:info@alhodarealestate.com">info@alhodarealestate.com</a></p>
+                        <br>
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -53,8 +54,19 @@
                         <div class="ltn__contact-address-icon">
                             <img src=" {{ asset('front/assets/img/icons/11.png') }}" alt="Icon Image">
                         </div>
-                        <h3>Phone Number</h3>
-                        <p>+0123-456789 <br> +987-6543210</p>
+                        <h3>أرقام التواصل</h3>
+                        <p>
+
+                            <a href="tel:+201003362896">+201003362896</a>
+
+                            <a href="tel:+201095000384">+201095000384</a>
+                            <br>
+                            <a href="tel:+201033874584">+201033874584</a>
+
+                            <a href="tel:+201111186708">+201111186708</a>
+                        </p>
+
+
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -62,9 +74,8 @@
                         <div class="ltn__contact-address-icon">
                             <img src="{{ asset('front/assets/img/icons/12.png') }}" alt="Icon Image">
                         </div>
-                        <h3>Office Address</h3>
-                        <p>18/A, New Born Town Hall <br>
-                            New York, US</p>
+                        <h3>عنوان المقر</h3>
+                        <p>حدائق اكتوبر شارع المنتزه <br> كمبوند الصناعات عمارة رقم 29 شقة رقم 1</p>
                     </div>
                 </div>
             </div>

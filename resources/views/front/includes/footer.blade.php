@@ -32,30 +32,37 @@
 
 
                 <div class="col-xl-3 col-md-12 col-sm-12 col-12">
-                    <div class="footer-widget footer-about-widget">
+                    <div class="footer-widget footer-about-widget text-right">
                         <div class="footer-logo">
                             <div class="site-logo">
-                                <img src="{{ asset('Front/assets/img/logoo.png') }}" alt="Logo">
+                                <img src="{{ asset('front/assets/img/logoo.png') }}" alt="Logo">
                             </div>
                         </div>
-                        <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text
-                            of the printing.</p>
+                        <div class="site-logo">
+
+                            شركة الهدى للتسويق العقاري
+
+                        </div>
+                        <p>خبرة أكثر من 20 عامًا في تقديم أفضل الحلول العقارية، متخصصون في البيع، الشراء، البناء،
+                            والتشطيب في حدائق أكتوبر والقاهرة الكبرى. تابعنا للحصول على أحدث العروض.</p>
                         <div class="footer-address">
                             <ul>
-                                <li>
-                                    <div class="footer-address-icon">
-                                        <i class="icon-placeholder"></i>
-                                    </div>
-                                    <div class="footer-address-info">
-                                        <p>Brooklyn, New York, United States</p>
-                                    </div>
-                                </li>
                                 <li>
                                     <div class="footer-address-icon">
                                         <i class="icon-call"></i>
                                     </div>
                                     <div class="footer-address-info">
-                                        <p><a href="tel:+0123-456789">+0123-456789</a></p>
+                                        <p><a href="tel:+201003362896">+201003362896</a></p>
+
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="footer-address-icon">
+                                        <i class="icon-placeholder"></i>
+                                    </div>
+                                    <div class="footer-address-info">
+                                        <p>حدائق اكتوبر شارع المنتزه كمبوند الصناعات عمارة رقم 29 شقة رقم 1</p>
                                     </div>
                                 </li>
                                 <li>
@@ -63,7 +70,7 @@
                                         <i class="icon-mail"></i>
                                     </div>
                                     <div class="footer-address-info">
-                                        <p><a href="mailto:example@example.com">example@example.com</a></p>
+                                        <p><a href="mailto:info@alhodarealestate.com">info@alhodarealestate.com</a></p>
                                     </div>
                                 </li>
                             </ul>

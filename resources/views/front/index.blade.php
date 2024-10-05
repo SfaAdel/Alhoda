@@ -25,20 +25,23 @@
                                             </a>
                                         </div>
                                         <h6 class="slide-sub-title white-color--- animated text-right"><span><i
-                                                    class="fas fa-home"></i></span> وكالة عقارات</h6>
-                                        <h1 class="slide-title animated text-right">ابحث عن حلمك <br> البيت من قبلنا</h1>
+                                                    class="fas fa-home"></i></span> الهدي للتسويق العقارى</h6>
+                                        <h1 class="slide-title animated text-right"> شريكك الأمثل<br> لاستثمارك العقاري
+                                        </h1>
                                         <div class="slide-brief animated text-right">
-                                            <p>لوريم إيبسوم جزر معزز الخصومات. النوم والألم؟لوريم إيبسوم جزر معزز الخصومات.
-                                                النوم والألم؟</p>
+                                            <p>
+                                                الهدى للتسويق العقارى بتقدملك كل اللى تحتاجه فى العقارات بخبرة اكتر من 20
+                                                سنة مهما كانت ميزانيتك هتلاقى اللى يناسبك
+                                            </p>
                                         </div>
-                                        <div class="btn-wrapper animated text-right">
+                                        {{-- <div class="btn-wrapper animated text-right">
                                             <a href="about.html" class="theme-btn-1 btn btn-effect-1">استفسر</a>
                                             <a class="ltn__video-play-btn bg-white"
                                                 href="https://www.youtube.com/embed/HnbMYzdjuBs?autoplay=1&amp;showinfo=0"
                                                 data-rel="lightcase">
                                                 <i class="icon-play  ltn__secondary-color"></i>
                                             </a>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                 </div>
                                 <div class="slide-item-img">
@@ -84,9 +87,6 @@
     </div>
     <!-- SLIDER AREA END -->
 
-
-
-
     <!-- CAR DEALER FORM AREA START -->
     <div class="ltn__car-dealer-form-area mt--65 mt-120 pb-115---">
         <div class="container text-center">
@@ -104,7 +104,8 @@
                         <div class="tab-content bg-white box-shadow-1 ltn__border position-relative pb-10">
                             <div class="tab-pane fade active show" id="ltn__form_tab_1_1">
                                 <div class="car-dealer-form-inner">
-                                    <form action="{{ route('properties.filter') }}" method="GET" class="ltn__car-dealer-form-box row">
+                                    <form action="{{ route('properties.filter') }}" method="GET"
+                                        class="ltn__car-dealer-form-box row">
                                         <div class="ltn__car-dealer-form-item col-lg-3 col-md-6">
                                             <select name="city" class="nice-select">
                                                 <option value="">اختر المنطقة</option>
@@ -149,7 +150,8 @@
                                             </select>
                                         </div>
                                         <div class="ltn__car-dealer-form-item col-lg-3 col-md-6">
-                                            <button type="submit" class="btn theme-btn-1 btn-effect-1 text-uppercase">بحث</button>
+                                            <button type="submit"
+                                                class="btn theme-btn-1 btn-effect-1 text-uppercase">بحث</button>
                                         </div>
                                     </form>
 
@@ -179,143 +181,40 @@
                 <div class="col-lg-6 align-self-center">
                     <div class="about-us-info-wrap">
                         <div class="section-title-area ltn__section-title-2--- mb-20">
-                            <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">معلومات عنا</h6>
-                            <h1 class="section-title">سوق تأجير العقارات الرائد<span>.</span></h1>
-                            <p>لوريم إيبسوم جزر معزز الخصومات. النوم والألم؟لوريم إيبسوم جزر معزز الخصومات. النوم والألم؟
+                            <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color"> من نحن </h6>
+                            {{-- <h1 class="section-title">سوق تأجير العقارات الرائد<span>.</span></h1> --}}
+                            <p>
+                                شركة الهدى للتسويق العقاري هي واحدة من الشركات الرائدة في مجال التسويق العقاري في مصر، بخبرة
+                                تمتد لأكثر من 20 عامًا في السوق. نعمل على تقديم خدمات متكاملة تشمل شراء وبيع العقارات،
+                                بالإضافة إلى تقديم خدمات البناء والتشطيب في مشروع "ابني بيتك" بحدائق أكتوبر.
                             </p>
                         </div>
                         <ul class="ltn__list-item-half clearfix">
                             <li>
                                 <i class="flaticon-home-2"></i>
-                                Smart Home Design
+                                منازل حديثة
                             </li>
                             <li>
                                 <i class="flaticon-mountain"></i>
-                                Beautiful Scene Around
+                                مشاهد خلابة حولها
                             </li>
                             <li>
                                 <i class="flaticon-heart"></i>
-                                Exceptional Lifestyle
+                                أسلوب حياة استثنائي
                             </li>
                             <li>
                                 <i class="flaticon-secure"></i>
-                                Complete 24/7 Security
+                                نظام امان كامل
                             </li>
                         </ul>
                         <div class="ltn__callout bg-overlay-theme-05  mt-30">
-                            <p>"Enimad minim veniam quis nostrud exercitation <br>
-                                llamco laboris. Lorem ipsum dolor sit amet" </p>
+                            <p>
+                                في الهدى، نلتزم بتقديم حلول عقارية متكاملة ومخصصة تلبي طموحات عملائنا وتوفر لهم أفضل الفرص
+                                العقارية في السوق، بفضل خبراتنا المتراكمة ومعرفتنا العميقة باحتياجات السوق. </p>
                         </div>
                         <div class="btn-wrapper animated">
                             <a href="{{ route('about') }}" class="theme-btn-1 btn btn-effect-1">اقرأ المزيد . . .</a>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ABOUT US AREA END -->
-
-    <!-- COUNTER UP AREA START -->
-    <div class="ltn__counterup-area section-bg-1 pt-120 pb-70">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 align-self-center">
-                    <div class="ltn__counterup-item text-color-white---">
-                        <div class="counter-icon">
-                            <i class="flaticon-select"></i>
-                        </div>
-                        <h1><span class="counter">560</span><span class="counterUp-icon">+</span> </h1>
-                        <h6>Total Area Sq</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 align-self-center">
-                    <div class="ltn__counterup-item text-color-white---">
-                        <div class="counter-icon">
-                            <i class="flaticon-office"></i>
-                        </div>
-                        <h1><span class="counter">197</span><span class="counterUp-letter">K</span><span
-                                class="counterUp-icon">+</span> </h1>
-                        <h6>Apartments Sold</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 align-self-center">
-                    <div class="ltn__counterup-item text-color-white---">
-                        <div class="counter-icon">
-                            <i class="flaticon-excavator"></i>
-                        </div>
-                        <h1><span class="counter">268</span><span class="counterUp-icon">+</span> </h1>
-                        <h6>Total Constructions</h6>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 align-self-center">
-                    <div class="ltn__counterup-item text-color-white---">
-                        <div class="counter-icon">
-                            <i class="flaticon-armchair"></i>
-                        </div>
-                        <h1><span class="counter">340</span><span class="counterUp-icon">+</span> </h1>
-                        <h6>Apartio Rooms</h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- COUNTER UP AREA END -->
-
-    <!-- ABOUT US AREA START -->
-    <div class="ltn__about-us-area pt-120 pb-90 text-right ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 align-self-center">
-                    <div class="about-us-info-wrap">
-                        <div class="section-title-area ltn__section-title-2--- mb-30">
-                            <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">About Us</h6>
-                            <h1 class="section-title">Today Sells Properties</h1>
-                            <p>Houzez allow you to design unlimited panels and real estate custom
-                                forms to capture leads and keep record of all information</p>
-                        </div>
-                        <ul class="ltn__list-item-1 ltn__list-item-1-before clearfix">
-                            <li> Live Music Cocerts at Luviana</li>
-                            <li>Our SecretIsland Boat Tour is Just for You</li>
-                            <li>Live Music Cocerts at Luviana</li>
-                            <li>Live Music Cocerts at Luviana</li>
-                        </ul>
-                        <ul class="ltn__list-item-2 ltn__list-item-2-before ltn__flat-info">
-                            <li><span>3 <i class="flaticon-bed"></i></span>
-                                Bedrooms
-                            </li>
-                            <li><span>2 <i class="flaticon-clean"></i></span>
-                                Bathrooms
-                            </li>
-                            <li><span>2 <i class="flaticon-car"></i></span>
-                                Car parking
-                            </li>
-                            <li><span>3450 <i class="flaticon-square-shape-design-interface-tool-symbol"></i></span>
-                                square Ft
-                            </li>
-                        </ul>
-                        <ul class="ltn__list-item-2 ltn__list-item-2-before--- ltn__list-item-2-img mb-50">
-                            <li>
-                                <a href="img/img-slide/11.jpg" data-rel="lightcase:myCollection">
-                                    <img src="{{ asset('front/assets/img/img-slide/111.jpeg ') }}" alt="Image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="img/img-slide/12.jpg" data-rel="lightcase:myCollection">
-                                    <img src="{{ asset('front/assets/img/img-slide/112.jpeg') }}" alt="Image">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="img/img-slide/13.jpg" data-rel="lightcase:myCollection">
-                                    <img src="{{ asset('front/assets/img/img-slide/113.jpeg') }}" alt="Image">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-6 align-self-center">
-                    <div class="about-us-img-wrap about-img-right">
-                        <img src="{{ asset('front/assets/img/others/19.jpeg ') }}" alt="About Us Image">
                     </div>
                 </div>
             </div>
@@ -329,54 +228,71 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">Our Services</h6>
-                        <h1 class="section-title">Our Main Focus</h1>
+                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">خدماتنا</h6>
+                        <h1 class="section-title">أهدافنا الأساسية</h1>
                     </div>
                 </div>
             </div>
             <div class="row ltn__custom-gutter--- justify-content-center">
-                <div class="col-lg-4 col-sm-6 col-12">
+                <div class="col-lg-6 col-sm-6 col-12">
                     <div class="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
                         <div class="ltn__feature-icon">
                             <!-- <span><i class="flaticon-house"></i></span> -->
                             <img src=" {{ asset('front/assets/img/icons/icon-img/21.png') }}" alt="#">
                         </div>
                         <div class="ltn__feature-info">
-                            <h3><a href="service-details.html">Buy a home</a></h3>
-                            <p>over 1 million+ homes for sale available on the website, we can match you with a house you
-                                will want to call home.</p>
-                            <a class="ltn__service-btn" href="service-details.html">Find A Home <i
-                                    class="flaticon-right-arrow"></i></a>
+                            <h3><a href="service-details.html">بيع العقارات</a></h3>
+                            <p>
+                                نساعدك في بيع عقارك بسرعة وبأفضل سعر من خلال فريقنا المتخصص في التسويق العقاري. نعمل مع شبكة
+                                واسعة من العملاء والمطورين العقاريين لتوفير فرص بيع مميزة لجميع أنواع العقارات، سواء كانت
+                                سكنية أو تجارية.
+                            </p>
+
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-12">
+                <div class="col-lg-6 col-sm-6 col-12">
                     <div class="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1 active">
                         <div class="ltn__feature-icon">
                             <!-- <span><i class="flaticon-house-3"></i></span> -->
                             <img src=" {{ asset('front/assets/img/icons/icon-img/22.png') }}" alt="#">
                         </div>
                         <div class="ltn__feature-info">
-                            <h3><a href="service-details.html">Rent a home</a></h3>
-                            <p>over 1 million+ homes for sale available on the website, we can match you with a house you
-                                will want to call home.</p>
-                            <a class="ltn__service-btn" href="service-details.html">Find A Home <i
-                                    class="flaticon-right-arrow"></i></a>
+                            <h3><a href="service-details.html">شراء العقارات</a></h3>
+                            <p>نقدم لك مجموعة من أفضل العروض العقارية في السوق، سواء كنت تبحث عن شقة، فيلا، أو وحدة تجارية.
+                                نساعدك في اختيار العقار الذي يناسب احتياجاتك وميزانيتك، مع تقديم استشارات مهنية لضمان اتخاذ
+                                القرار الصحيح.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6 col-12">
+                <div class="col-lg-6 col-sm-6 col-12">
                     <div class="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
                         <div class="ltn__feature-icon">
                             <!-- <span><i class="flaticon-deal-1"></i></span> -->
                             <img src=" {{ asset('front/assets/img/icons/icon-img/23.png') }}" alt="#">
                         </div>
                         <div class="ltn__feature-info">
-                            <h3><a href="service-details.html">Sell a home</a></h3>
-                            <p>over 1 million+ homes for sale available on the website, we can match you with a house you
-                                will want to call home.</p>
-                            <a class="ltn__service-btn" href="service-details.html">Find A Home <i
-                                    class="flaticon-right-arrow"></i></a>
+                            <h3><a href="service-details.html">البناء والتشطيب</a></h3>
+                            <p>مع خدماتنا المتكاملة للبناء والتشطيب، يمكنك تحويل رؤيتك إلى حقيقة. نقدم حلولًا شاملة من تصميم
+                                البناء إلى تسليم المفتاح، مع ضمان الجودة العالية والالتزام بالمواعيد النهائية. خبرتنا في
+                                مشروع "ابني بيتك" تجعلنا الخيار الأمثل لاحتياجاتك في حدائق أكتوبر.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-12">
+                    <div class="ltn__feature-item ltn__feature-item-6 text-center bg-white  box-shadow-1">
+                        <div class="ltn__feature-icon">
+                            <!-- <span><i class="flaticon-deal-1"></i></span> -->
+                            <img src=" {{ asset('front/assets/img/icons/icon-img/22.png') }}" alt="#">
+                        </div>
+                        <div class="ltn__feature-info">
+                            <h3><a href="service-details.html">إيجار العقارات</a></h3>
+                            <p>
+
+                                سواء كنت تبحث عن سكن مؤقت أو مساحة عمل تجارية، نقدم لك خيارات تأجير متنوعة تلبي جميع
+                                احتياجاتك. نتعامل مع أفضل العقارات المتاحة للإيجار في القاهرة والجيزة لضمان راحتك ورضاك.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -385,16 +301,14 @@
     </div>
     <!-- FEATURE AREA END -->
 
-
-
     <!-- PRODUCT SLIDER AREA START -->
     <div class="ltn__product-slider-area ltn__product-gutter pt-115 pb-90 plr--7">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">Properties</h6>
-                        <h1 class="section-title">Featured Listings</h1>
+                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">العقارات</h6>
+                        <h1 class="section-title">أحدث العقارات</h1>
                     </div>
                 </div>
             </div>
@@ -477,339 +391,6 @@
     </div>
     <!-- PRODUCT SLIDER AREA END -->
 
-
-    <!-- VIDEO AREA START -->
-    <div class="ltn__video-popup-area ltn__video-popup-margin---">
-        <div class="ltn__video-bg-img ltn__video-popup-height-600--- bg-overlay-black-30 bg-image bg-fixed ltn__animation-pulse1"
-            data-bs-bg="{{ asset('front/assets/img/bg/19.jpg  ') }}">
-            <a class="ltn__video-icon-2 ltn__video-icon-2-border---"
-                href="https://www.youtube.com/embed/X7R-q9rsrtU?autoplay=1&showinfo=0" data-rel="lightcase:myCollection">
-                <i class="fa fa-play"></i>
-            </a>
-        </div>
-    </div>
-    <!-- VIDEO AREA END -->
-
-    <!-- CATEGORY AREA START -->
-    <div class="ltn__category-area section-bg-1-- ltn__primary-bg before-bg-1 bg-image bg-overlay-theme-black-5--0 pt-115 pb-90 d-none"
-        data-bs-bg="{{ asset('front/assets/img/bg/5.jpg') }} ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2 text-center">
-                        <h1 class="section-title white-color">Top Categories</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row ltn__category-slider-active slick-arrow-1">
-                <div class="col-12">
-                    <div class="ltn__category-item ltn__category-item-4 text-center">
-                        <div class="ltn__category-item-img">
-                            <a href="shop.html">
-                                <i class="flaticon-car"></i>
-                            </a>
-                        </div>
-                        <div class="ltn__category-item-name">
-                            <h4><a href="shop.html">Parking Space</a></h4>
-                        </div>
-                        <div class="ltn__category-item-btn">
-                            <a href="shop.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="ltn__category-item ltn__category-item-4 text-center">
-                        <div class="ltn__category-item-img">
-                            <a href="shop.html">
-                                <i class="flaticon-car"></i>
-                            </a>
-                        </div>
-                        <div class="ltn__category-item-name">
-                            <h4><a href="shop.html">Parking Space</a></h4>
-                        </div>
-                        <div class="ltn__category-item-btn">
-                            <a href="shop.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="ltn__category-item ltn__category-item-4 text-center">
-                        <div class="ltn__category-item-img">
-                            <a href="shop.html">
-                                <i class="flaticon-car"></i>
-                            </a>
-                        </div>
-                        <div class="ltn__category-item-name">
-                            <h4><a href="shop.html">Parking Space</a></h4>
-                        </div>
-                        <div class="ltn__category-item-btn">
-                            <a href="shop.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="ltn__category-item ltn__category-item-4 text-center">
-                        <div class="ltn__category-item-img">
-                            <a href="shop.html">
-                                <i class="flaticon-car"></i>
-                            </a>
-                        </div>
-                        <div class="ltn__category-item-name">
-                            <h4><a href="shop.html">Parking Space</a></h4>
-                        </div>
-                        <div class="ltn__category-item-btn">
-                            <a href="shop.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="ltn__category-item ltn__category-item-4 text-center">
-                        <div class="ltn__category-item-img">
-                            <a href="shop.html">
-                                <i class="flaticon-car"></i>
-                            </a>
-                        </div>
-                        <div class="ltn__category-item-name">
-                            <h4><a href="shop.html">Parking Space</a></h4>
-                        </div>
-                        <div class="ltn__category-item-btn">
-                            <a href="shop.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <div class="ltn__category-item ltn__category-item-4 text-center">
-                        <div class="ltn__category-item-img">
-                            <a href="shop.html">
-                                <i class="flaticon-car"></i>
-                            </a>
-                        </div>
-                        <div class="ltn__category-item-name">
-                            <h4><a href="shop.html">Parking Space</a></h4>
-                        </div>
-                        <div class="ltn__category-item-btn">
-                            <a href="shop.html"><i class="flaticon-right-arrow"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- CATEGORY AREA END -->
-
-    <!-- CATEGORY AREA START -->
-    <div class="ltn__category-area ltn__product-gutter section-bg-1--- pt-115 pb-90 ">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">Our Aminities</h6>
-                        <h1 class="section-title">Building Aminities</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row ltn__category-slider-active--- slick-arrow-1 justify-content-center">
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="ltn__category-item ltn__category-item-5 text-center">
-                        <a href="shop.html">
-                            <span class="category-icon"><i class="flaticon-car"></i></span>
-                            <span class="category-title">Parking Space</span>
-                            <span class="category-btn"><i class="flaticon-right-arrow"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="ltn__category-item ltn__category-item-5 text-center">
-                        <a href="shop.html">
-                            <span class="category-icon"><i class="flaticon-swimming"></i></span>
-                            <span class="category-title">Swimming Pool</span>
-                            <span class="category-btn"><i class="flaticon-right-arrow"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="ltn__category-item ltn__category-item-5 text-center">
-                        <a href="shop.html">
-                            <span class="category-icon"><i class="flaticon-secure-shield"></i></span>
-                            <span class="category-title">Private Security</span>
-                            <span class="category-btn"><i class="flaticon-right-arrow"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="ltn__category-item ltn__category-item-5 text-center">
-                        <a href="shop.html">
-                            <span class="category-icon"><i class="flaticon-stethoscope"></i></span>
-                            <span class="category-title">Medical Center</span>
-                            <span class="category-btn"><i class="flaticon-right-arrow"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="ltn__category-item ltn__category-item-5 text-center">
-                        <a href="shop.html">
-                            <span class="category-icon"><i class="flaticon-book"></i></span>
-                            <span class="category-title">Library Area</span>
-                            <span class="category-btn"><i class="flaticon-right-arrow"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="ltn__category-item ltn__category-item-5 text-center">
-                        <a href="shop.html">
-                            <span class="category-icon"><i class="flaticon-bed-1"></i></span>
-                            <span class="category-title">King Size Beds</span>
-                            <span class="category-btn"><i class="flaticon-right-arrow"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="ltn__category-item ltn__category-item-5 text-center">
-                        <a href="shop.html">
-                            <span class="category-icon"><i class="flaticon-home-2"></i></span>
-                            <span class="category-title">Smart Homes</span>
-                            <span class="category-btn"><i class="flaticon-right-arrow"></i></span>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-sm-6 col-6">
-                    <div class="ltn__category-item ltn__category-item-5 text-center">
-                        <a href="shop.html">
-                            <span class="category-icon"><i class="flaticon-slider"></i></span>
-                            <span class="category-title">Kid’s Playland</span>
-                            <span class="category-btn"><i class="flaticon-right-arrow"></i></span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- CATEGORY AREA END -->
-
-    <!-- TESTIMONIAL AREA START (testimonial-7) -->
-    <div class="ltn__testimonial-area section-bg-1--- bg-image-top pt-115 pb-70"
-        data-bs-bg=" {{ asset('front/assets/img/bg/20.jpg') }}">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-area ltn__section-title-2--- text-center">
-                        <h6 class="section-subtitle section-subtitle-2 ltn__secondary-color">Our Testimonial</h6>
-                        <h1 class="section-title">Clients Feedback</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row ltn__testimonial-slider-5-active slick-arrow-1">
-                <div class="col-lg-4">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-7">
-                        <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i>
-                                Precious ipsum dolor sit amet
-                                consectetur adipisicing elit, sed dos
-                                mod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad min
-                                veniam, quis nostrud Precious ips
-                                um dolor sit amet, consecte</p>
-                            <div class="ltn__testimoni-info-inner">
-                                <div class="ltn__testimoni-img">
-                                    <img src="{{ asset('front/assets/img/testimonial/1.jpg') }}" alt="#">
-                                </div>
-                                <div class="ltn__testimoni-name-designation">
-                                    <h5>Jacob William</h5>
-                                    <label>Selling Agents</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-7">
-                        <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i>
-                                Precious ipsum dolor sit amet
-                                consectetur adipisicing elit, sed dos
-                                mod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad min
-                                veniam, quis nostrud Precious ips
-                                um dolor sit amet, consecte</p>
-                            <div class="ltn__testimoni-info-inner">
-                                <div class="ltn__testimoni-img">
-                                    <img src="{{ asset('front/assets/img/testimonial/2.jpg') }}" alt="#">
-                                </div>
-                                <div class="ltn__testimoni-name-designation">
-                                    <h5>Kelian Anderson</h5>
-                                    <label>Selling Agents</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="ltn__testimonial-item ltn__testimonial-item-7">
-                        <div class="ltn__testimoni-info">
-                            <p><i class="flaticon-left-quote-1"></i>
-                                Precious ipsum dolor sit amet
-                                consectetur adipisicing elit, sed dos
-                                mod tempor incididunt ut labore et
-                                dolore magna aliqua. Ut enim ad min
-                                veniam, quis nostrud Precious ips
-                                um dolor sit amet, consecte</p>
-                            <div class="ltn__testimoni-info-inner">
-                                <div class="ltn__testimoni-img">
-                                    <img src=" {{ asset('front/assets/img/testimonial/3.jpg ') }}" alt="#">
-                                </div>
-                                <div class="ltn__testimoni-name-designation">
-                                    <h5>Adam Joseph</h5>
-                                    <label>Selling Agents</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--  -->
-            </div>
-        </div>
-    </div>
-    <!-- TESTIMONIAL AREA END -->
-
-    <!-- BRAND LOGO AREA START -->
-    <div class="ltn__brand-logo-area ltn__brand-logo-1 section-bg-1 pt-290 pb-110 plr--9 ">
-        <div class="container-fluid">
-            <div class="row ltn__brand-logo-active">
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src=" {{ asset('front/assets/img/brand-logo/1.png ') }}" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src=" {{ asset('front/assets/img/brand-logo/2.png ') }}" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src=" {{ asset('front/assets/img/brand-logo/1.png ') }}" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="{{ asset('front/assets/img/brand-logo/1.png ') }}" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="{{ asset('front/assets/img/brand-logo/1.png ') }}" alt="Brand Logo">
-                    </div>
-                </div>
-                <div class="col-lg-12">
-                    <div class="ltn__brand-logo-item">
-                        <img src="{{ asset('front/assets/img/brand-logo/1.png ') }}" alt="Brand Logo">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- BRAND LOGO AREA END -->
-
     @if (!$blogs->isEmpty())
 
         <!-- BLOG AREA START (blog-3) -->
@@ -847,7 +428,8 @@
                                         </ul>
                                     </div>
                                     <h3 class="ltn__blog-title"><a
-                                            href="{{ route('blog.details', $blog->id) }}">{{ $blog->short_description }}</a></h3>
+                                            href="{{ route('blog.details', $blog->id) }}">{{ $blog->short_description }}</a>
+                                    </h3>
                                     <div class="ltn__blog-meta-btn">
                                         <div class="ltn__blog-meta">
                                             <ul>

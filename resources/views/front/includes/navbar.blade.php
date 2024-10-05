@@ -7,9 +7,9 @@
                 <div class="col-md-7">
                     <div class="ltn__top-bar-menu">
                         <ul>
-                            <li><a href="mailto:info@webmail.com?Subject=Flower%20greetings%20to%20you">info@webmail.com
+                            <li><a href="mailto:info@alhodarealestate.com">info@alhodarealestate.com
                                     <i class="icon-mail"></i> </a></li>
-                            <li><a href="locations.html"> Nest Tower, NYC <i class="icon-placeholder"></i> </a></li>
+                            <li><a href="locations.html"> <i class="icon-placeholder"></i> مصر,حدائق اكتوبر   </a></li>
                         </ul>
                     </div>
                 </div>
