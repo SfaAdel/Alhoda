@@ -35,7 +35,7 @@
                     <div class="footer-widget footer-about-widget">
                         <div class="footer-logo">
                             <div class="site-logo">
-                                <img src="{{ asset('front/assets/img/logoo.png') }}" alt="Logo">
+                                <img src="{{ asset('Front/assets/img/logoo.png') }}" alt="Logo">
                             </div>
                         </div>
                         <p>Lorem Ipsum is simply dummy text of the and typesetting industry. Lorem Ipsum is dummy text
